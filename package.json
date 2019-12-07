@@ -1,5 +1,5 @@
 {
-  "name": "Node-Express-Handlebars",
+  "name": "burger",
   "version": "1.0.0",
   "description": "Homework using Node Express Handlebars",
   "main": "server.js",
