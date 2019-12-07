@@ -1,24 +1,26 @@
 {
   "name": "burger",
   "version": "1.0.0",
-  "description": "MySQL Express Handlebars App",
+  "description": "Homework using Node Express Handlebars",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "author": "",
+  "keywords": [
+    "node",
+    "handlebars"
+  ],
+  "author": "Ali Rahimlou",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/AliRahimlou/Node-Express-Handlebars"
   },
-  "homepage": "",
+  "homepage": "https://github.com/AliRahimlou/Node-Express-Handlebars/blob/master/README.md",
   "dependencies": {
-    "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
-    "mysql": "^2.17.1"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0"
   }
 }
