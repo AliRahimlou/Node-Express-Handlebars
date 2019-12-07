@@ -2,7 +2,7 @@
   "name": "burgers",
   "version": "1.0.0",
   "description": "Homework using Node Express Handlebars",
-  "main": "index.js",
+  "main": "main.handlebars",
   "scripts": {
     "start": "node server.js"
   },
