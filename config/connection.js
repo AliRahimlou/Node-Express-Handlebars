@@ -1,5 +1,5 @@
 // Node Dependency
-var mysql = require('mysql2');
+var mysql = require('mysql');
 var connection;
 
 // For Heroku Deployment vs. Local MySQL Database
