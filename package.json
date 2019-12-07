@@ -13,9 +13,9 @@
   "author": "Ali Rahimlou",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AliRahimlou/Node-Express-Handlebars"
+    "url": ""
   },
-  "homepage": "https://github.com/AliRahimlou/Node-Express-Handlebars/blob/master/README.md",
+  "homepage": "",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
