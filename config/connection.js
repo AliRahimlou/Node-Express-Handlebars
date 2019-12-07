@@ -10,8 +10,8 @@ else{
   connection = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
-    password : 'docker', // Add your password
-    database : 'burgers_db' // Add your database
+    password : 'docker', 
+    database : 'burgers_db' 
   });
 }
 
