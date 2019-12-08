@@ -1,24 +1,27 @@
-var express = require("express");
+// Node Dependencies
+var express = require('express');
+var bodyParser = require('body-parser');
 
-var PORT = process.env.PORT || 8000;
 var app = express();
+//Serve static content for the app from the "public" directory in the application directory.
+app.use(express.static(process.cwd() + '/public'));
+// app.use(express.static('public'));
 
-// Serve static content for the app from the "public" directory in the application directory.
-app.use(express.static("public"));
+// Parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
 
-// Parse application body
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+// Handlebars
+var exphbs = require('express-handlebars');
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
 
-var exphbs = require("express-handlebars");
 
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+var router = require('./controllers/burgers_controllers.js');
+app.use('/', router);
 
-var routes = require("./controllers/burgersController.js");
+// Open Server
+var port = process.env.PORT || 3000;
 
-app.use(routes);
-
-app.listen(PORT, function() {
-  console.log("Listening on port:%s", PORT);
+app.listen(port, function() {
+  console.log("Listening on port:%s", port);
 });
